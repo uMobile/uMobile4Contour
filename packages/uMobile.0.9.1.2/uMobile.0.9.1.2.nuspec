@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>uMobile</id>
     <version>0.9.1.2</version>
@@ -11,12 +11,7 @@
     <iconUrl>http://www.umobileapp.com/img/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>uMobile allows you to quickly and easily develop mobile applications for management of Umbraco instances</description>
-    <releaseNotes />
-    <copyright />
     <language />
     <tags>Umbraco Mobile Application</tags>
-    <references>
-      <reference file="lecoati.uMobile.dll" />
-    </references>
   </metadata>
 </package>
