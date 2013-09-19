@@ -344,10 +344,10 @@ namespace umobile4contour
 
             Umbraco.Forms.Core.Form form = fs.GetForm(record.Form);
 
-            string data = "<p><b>Form:</b> " + form.Name + "</p><br />";
-            data += "<p><b>State:</b><br/>" + record.State.ToString() + "</p><br />";
-            data += "<p><b>Created:</b><br/>" + record.Created.ToString() + "</p><br />";
-            data += "<p><b>Ip:</b><br/>" + record.IP + "</p><br />";
+            string data = "<p><b>Form:</b> " + form.Name + "</p>";
+            data += "<p><b>State:</b><br/>" + record.State.ToString() + "</p>";
+            data += "<p><b>Created:</b><br/>" + record.Created.ToString() + "</p>";
+            data += "<p><b>Ip:</b><br/>" + record.IP + "</p>";
 
             foreach (Field field in form.AllFields)
             {
@@ -356,7 +356,7 @@ namespace umobile4contour
                 {
                     value = record.GetRecordField(field.Id).Values[0].ToString();
                 }
-                data += "<p><b>" + field.Caption + ":</b><br/>" + value + "</p><br />";
+                data += "<p><b>" + field.Caption + ":</b><br/>" + value + "</p>";
             }
 
             try
