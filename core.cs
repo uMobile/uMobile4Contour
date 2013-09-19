@@ -134,7 +134,7 @@ namespace umobile4contour
                 if (total > (results.Count() + (page - 1) * (int)show))
                     nextButton = new Button(icon: GenericIcon.ArrowRight, action: new Call("ListRecord", new string[] { formGuid, (page + 1).ToString() }));
 
-                calls.AddListItem(new ListItem("<b>Total result:</b> " + total.ToString(), subtitle: "Page <b>" + page.ToString() + "</b> to <b>" + (((int)(total / (int)show)) + 1 ).ToString() + "</b>", contextual_button: nextButton));
+                calls.AddListItem(new ListItem("<b>Total result:</b> " + total.ToString(), subtitle: "Page <b>" + page.ToString() + "</b> to <b>" + (((int)(total / (int)show)) + 1).ToString() + "</b>", contextual_button: nextButton));
 
                 foreach (Record record in results)
                 {
@@ -143,6 +143,10 @@ namespace umobile4contour
                     action: new Call("ViewData", new string[] { record.Id.ToString() })));
                 }
 
+            }
+            else
+            {
+                calls.AddListItem(new ListItem("<b>Total result:</b> 0", subtitle: "Page <b>0</b> to <b>0</b>"));
             }
 
             return calls.UmGo();
