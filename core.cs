@@ -11,15 +11,15 @@ using Umbraco.Forms.Core.Enums;
 using Umbraco.Forms.Core.Services;
 using Umbraco.Forms.Data.Storage;
 
-namespace umobile4contour
+namespace uMobile4Contour
 {
 
-    [umClass(category:"Contour", icon: lecoati.uMobile.umComponents.GenericIcon.ListAlt)]
+    [umClass(category: "Contour", icon: lecoati.uMobile.umComponents.GenericIcon.ListAlt)]
     public class core : uMobile
     {
 
         enum Range
-        { 
+        {
             hour,
             Day,
             Month,
@@ -34,8 +34,8 @@ namespace umobile4contour
             fifty = 50,
             thousand = 100
         };
-        
-        [umMethod(title:"Forms", subtitle:"Form managment", icon: lecoati.uMobile.umComponents.GenericIcon.ListAlt)]
+
+        [umMethod(title: "Forms", subtitle: "Form managment", icon: lecoati.uMobile.umComponents.GenericIcon.ListAlt)]
         public static string ListForm()
         {
 
@@ -45,11 +45,11 @@ namespace umobile4contour
             List calls = new List();
 
             foreach (Umbraco.Forms.Core.Form form in forms)
-            {    
+            {
                 calls.AddListItem(new ListItem(form.Name,
                 subtitle: "Created: " + form.Created.ToString(),
                 icon: GenericIcon.FolderClose,
-                action: new Call("ListRecord", new string[] { form.Id.ToString(), "1" }))); 
+                action: new Call("ListRecord", new string[] { form.Id.ToString(), "1" })));
             }
 
             return calls.UmGo();
@@ -191,7 +191,7 @@ namespace umobile4contour
             form.AddFieldset(fieldSetEntries);
 
             SelectField selecShow = new SelectField("Show", "Show", ((int)show).ToString());
-            foreach (Range showIndex in Enum.GetValues(typeof(Show)))
+            foreach (Show showIndex in Enum.GetValues(typeof(Show)))
                 selecShow.AddOption(((int)showIndex).ToString(), showIndex.ToString());
             fieldSetEntries.AddFormItem(selecShow);
 
@@ -244,7 +244,7 @@ namespace umobile4contour
             }
 
             calls.AddListItem(new ListItem("<b>Record</b><br/><br />",
-               subtitle: data));
+                subtitle: data));
 
             return calls.UmGo();
 
@@ -325,10 +325,10 @@ namespace umobile4contour
 
             form.primary = new Button("Send", new Call("EmailRecord", new string[] { recordId }));
 
-            FormFieldset fieldSet = new FormFieldset(title: "Filter by");
+            FormFieldset fieldSet = new FormFieldset(title: "Email record");
             form.AddFieldset(fieldSet);
 
-            fieldSet.AddFormItem(tFEmail);            
+            fieldSet.AddFormItem(tFEmail);
 
             return form.UmGo();
 
@@ -378,6 +378,8 @@ namespace umobile4contour
         }
 
     }
+
 }
+
 
 
