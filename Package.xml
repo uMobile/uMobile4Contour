@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>uMobile4Contour.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>uMobile4Contour.dll</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>uMobile4Contour</name>
+      <version>1.0.0</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://www.umobileapp.com</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Lecoatí Technology</name>
+      <website>http://www.lecoati.com</website>
+    </author>
+    <readme></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>
