@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uMobile</id>
-    <version>0.9.2.0</version>
+    <version>0.9.4</version>
     <title>uMobile</title>
     <authors>LECOATÍ TECHNOLOGY</authors>
     <owners>LECOATÍ TECHNOLOGY</owners>
@@ -11,12 +11,10 @@
     <iconUrl>http://www.umobileapp.com/img/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>uMobile allows you to quickly and easily develop mobile applications for management of Umbraco instances</description>
-    <releaseNotes>New feature - New actions in admin category
-New feature - logs filter
-New default features organization
-Refactoring of the content category
-More than 30 bugfixes</releaseNotes>
-    <copyright />
+    <releaseNotes>Compatible with versions 4.7.0–6.1.x
+New feature - Upload field added on the form
+New feature - Media section added to the built-in methods
+More than 10 bugfixes</releaseNotes>
     <language />
     <tags>Umbraco Mobile Application</tags>
   </metadata>

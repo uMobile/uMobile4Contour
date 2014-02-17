@@ -43,9 +43,9 @@
     <Reference Include="businesslogic">
       <HintPath>lib\businesslogic.dll</HintPath>
     </Reference>
-    <Reference Include="lecoati.uMobile, Version=0.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="lecoati.uMobile, Version=0.9.4.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\uMobile.0.9.2.0\lib\net40\lecoati.uMobile.dll</HintPath>
+      <HintPath>packages\uMobile.0.9.4\lib\net40\lecoati.uMobile.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
